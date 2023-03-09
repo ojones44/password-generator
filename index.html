@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manjari:wght@700&family=Red+Hat+Mono&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Password Generator</title>
+	</head>
+	<body>
+		<div id="app" class="container">
+			<h2>Password Generator</h2>
+			<div class="output">
+				<p id="output"></p>
+				<img
+					id="clipboard"
+					class="clipboard"
+					src="./images/copy.png"
+					alt="copy"
+				/>
+			</div>
+			<div class="options">
+				<div class="characters">
+					<p>Password Length</p>
+					<span id="length"></span>
+				</div>
+				<div class="slider">
+					<input
+						type="range"
+						min="7"
+						max="20"
+						value="15"
+						class="slider"
+						id="lengthSelector"
+					/>
+				</div>
+				<section class="selectors">
+					<div>
+						<input type="checkbox" id="uppercase" />
+						<label for="checkbox">Include Uppercase Letters?</label>
+					</div>
+					<div>
+						<input type="checkbox" id="lowercase" />
+						<label for="checkbox">Include Lowercase Letters?</label>
+					</div>
+					<div>
+						<input type="checkbox" id="numbers" />
+						<label for="checkbox">Include Numbers?</label>
+					</div>
+					<div>
+						<input type="checkbox" id="specials" />
+						<label for="checkbox">Include Special Characters?</label>
+					</div>
+				</section>
+				<div class="strength">
+					<p>STRENGTH</p>
+					<div class="strength-boxes">
+						<div></div>
+					</div>
+				</div>
+				<button id="generate" class="button">GENERATE</button>
+			</div>
+		</div>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>

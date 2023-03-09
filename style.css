@@ -1,0 +1,156 @@
+:root {
+	--clr-black: rgba(0, 0, 0, 0.87);
+	--clr-grey: rgba(36, 35, 42, 0.87);
+	--clr-light-grey: rgba(180, 180, 187, 0.87);
+	--clr-white: rgba(255, 255, 255, 0.87);
+	--clr-green: rgba(165, 255, 174, 0.87);
+
+	--ff-primary: Red Hat Mono, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	--ff-accent: Manjari, sans-serif;
+
+	--fw-400: 400;
+	--fw-700: 700;
+
+	--fs-small: 1rem;
+
+	--lh-small: 1.5;
+
+	font-family: var(--ff-primary);
+	line-height: var(--lh-small);
+	font-weight: var(--fw-400);
+
+	color-scheme: light dark;
+	background-color: var(--clr-black);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+}
+
+h2 {
+	line-height: 3;
+	color: var(--clr-light-grey);
+	font-family: var(--ff-accent);
+}
+
+input[type='checkbox'] {
+	accent-color: var(--clr-green);
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+.container {
+	width: 350px;
+	margin: 0 auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.output {
+	width: 330px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: var(--clr-grey);
+	color: var(--clr-light-grey);
+}
+
+.output p {
+	padding-left: 15px;
+}
+
+.characters span {
+	color: var(--clr-green);
+	font-weight: var(--fw-700);
+}
+
+.clipboard {
+	width: 25px;
+	cursor: pointer;
+	padding-right: 13px;
+}
+
+.options {
+	width: 330px;
+	background-color: var(--clr-grey);
+	padding: 10px;
+}
+
+.characters {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 16px 0;
+}
+
+.slider {
+	accent-color: var(--clr-green);
+	width: 280px;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.selectors {
+	text-align: left;
+	padding: 0 16px 10px;
+	font-size: 0.95rem;
+}
+
+.selectors div {
+	padding: 3px 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.strength {
+	display: flex;
+	width: 280px;
+	justify-content: space-around;
+	background-color: black;
+	color: var(--clr-light-grey);
+	padding: 10px;
+	font-family: var(--ff-accent);
+}
+
+.strength-boxes {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0 3px;
+	border: 2px solid white;
+	background-color: orange;
+	width: 5px;
+}
+
+.button {
+	border: none;
+	font-family: var(--ff-accent);
+	color: var(--clr-black);
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: var(--clr-green);
+	padding: 12px 0 10px;
+	margin: 10px 0 20px;
+	width: 280px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: black;
+	color: white;
+}
