@@ -15,7 +15,7 @@
 	<body>
 		<div id="app" class="container">
 			<h2>Password Generator</h2>
-			<div class="output">
+			<div id="generated-password" class="output">
 				<p id="output"></p>
 				<img
 					id="clipboard"
@@ -23,6 +23,9 @@
 					src="./images/copy.png"
 					alt="copy"
 				/>
+				<div class="hidden">
+					<input type="text" id="copyText" />
+				</div>
 			</div>
 			<div class="options">
 				<div class="characters">
@@ -42,28 +45,36 @@
 				<section class="selectors">
 					<div>
 						<input type="checkbox" id="uppercase" />
-						<label for="checkbox">Include Uppercase Letters?</label>
+						<label for="checkbox">Uppercase Letters?</label>
 					</div>
 					<div>
 						<input type="checkbox" id="lowercase" />
-						<label for="checkbox">Include Lowercase Letters?</label>
+						<label for="checkbox">Lowercase Letters?</label>
 					</div>
 					<div>
 						<input type="checkbox" id="numbers" />
-						<label for="checkbox">Include Numbers?</label>
+						<label for="checkbox">Numbers?</label>
 					</div>
 					<div>
 						<input type="checkbox" id="specials" />
-						<label for="checkbox">Include Special Characters?</label>
+						<label for="checkbox">Special Characters?</label>
 					</div>
 				</section>
 				<div class="strength">
 					<p>STRENGTH</p>
 					<div class="strength-boxes">
-						<div></div>
+						<div class="strength-box"></div>
+						<div class="strength-box"></div>
+						<div class="strength-box"></div>
+						<div class="strength-box"></div>
+						<div class="strength-box"></div>
+						<div class="strength-box"></div>
 					</div>
 				</div>
 				<button id="generate" class="button">GENERATE</button>
+			</div>
+			<div id="copied" class="copied">
+				<h3>Password copied!</h3>
 			</div>
 		</div>
 		<script type="module" src="/main.js"></script>

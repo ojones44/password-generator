@@ -4,6 +4,8 @@
 	--clr-light-grey: rgba(180, 180, 187, 0.87);
 	--clr-white: rgba(255, 255, 255, 0.87);
 	--clr-green: rgba(165, 255, 174, 0.87);
+	--clr-hover: rgba(103, 244, 117, 0.87);
+	--clr-copied: rgba(242, 219, 11, 0.87);
 
 	--ff-primary: Red Hat Mono, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	--ff-accent: Manjari, sans-serif;
@@ -57,7 +59,7 @@ input[type='checkbox'] {
 }
 
 .output {
-	width: 330px;
+	width: 300px;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 10px;
@@ -81,8 +83,13 @@ input[type='checkbox'] {
 	padding-right: 13px;
 }
 
+.hidden {
+	display: none;
+	opacity: 0;
+}
+
 .options {
-	width: 330px;
+	width: 300px;
 	background-color: var(--clr-grey);
 	padding: 10px;
 }
@@ -95,7 +102,8 @@ input[type='checkbox'] {
 
 .slider {
 	accent-color: var(--clr-green);
-	width: 280px;
+	max-width: 280px;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	padding: 10px;
@@ -118,21 +126,29 @@ input[type='checkbox'] {
 
 .strength {
 	display: flex;
-	width: 280px;
-	justify-content: space-around;
+	margin: 0 auto;
+	width: 260px;
+	justify-content: space-between;
 	background-color: black;
 	color: var(--clr-light-grey);
 	padding: 10px;
 	font-family: var(--ff-accent);
+	font-size: 0.85rem;
+}
+
+.strength p {
+	padding-top: 4px;
 }
 
 .strength-boxes {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-evenly;
+}
+
+.strength-boxes div {
 	align-items: center;
 	margin: 0 3px;
 	border: 2px solid white;
-	background-color: orange;
 	width: 5px;
 }
 
@@ -140,17 +156,22 @@ input[type='checkbox'] {
 	border: none;
 	font-family: var(--ff-accent);
 	color: var(--clr-black);
-	align-items: center;
-	justify-content: center;
-	text-align: center;
 	background-color: var(--clr-green);
 	padding: 12px 0 10px;
-	margin: 10px 0 20px;
+	margin: 10px 0 5px;
 	width: 280px;
 	cursor: pointer;
 }
 
 .button:hover {
-	background-color: black;
-	color: white;
+	background-color: var(--clr-hover);
+}
+
+.copied {
+	visibility: hidden;
+	width: 302px;
+	margin: 10px 0;
+	padding: 8px;
+	background-color: var(--clr-copied);
+	color: var(--clr-black);
 }
