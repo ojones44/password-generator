@@ -1,6 +1,6 @@
 :root {
-	--clr-black: rgba(0, 0, 0, 0.87);
-	--clr-grey: rgba(36, 35, 42, 0.87);
+	--clr-black: rgba(0, 0, 0);
+	--clr-grey: rgb(41, 43, 51);
 	--clr-light-grey: rgba(180, 180, 187, 0.87);
 	--clr-white: rgba(255, 255, 255, 0.87);
 	--clr-green: rgba(165, 255, 174, 0.87);
