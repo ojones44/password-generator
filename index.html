@@ -42,21 +42,21 @@
 						id="lengthSelector"
 					/>
 				</div>
-				<section class="selectors">
+				<section id="selectors" class="selectors">
 					<div>
-						<input type="checkbox" id="uppercase" />
+						<input class="checkbox" type="checkbox" id="uppercase" />
 						<label for="checkbox">Uppercase Letters?</label>
 					</div>
 					<div>
-						<input type="checkbox" id="lowercase" />
+						<input class="checkbox" type="checkbox" id="lowercase" />
 						<label for="checkbox">Lowercase Letters?</label>
 					</div>
 					<div>
-						<input type="checkbox" id="numbers" />
+						<input class="checkbox" type="checkbox" id="numbers" />
 						<label for="checkbox">Numbers?</label>
 					</div>
 					<div>
-						<input type="checkbox" id="specials" />
+						<input class="checkbox" type="checkbox" id="specials" />
 						<label for="checkbox">Special Characters?</label>
 					</div>
 				</section>
@@ -72,10 +72,12 @@
 					</div>
 				</div>
 				<button id="generate" class="button">GENERATE</button>
+				<button id="reset" class="button reset">RESET</button>
 			</div>
 			<div id="copied" class="copied">
 				<h3>Password copied!</h3>
 			</div>
+			<footer id="footer" class="footer"></footer>
 		</div>
 		<script type="module" src="/main.js"></script>
 	</body>
